@@ -1,5 +1,5 @@
 name: metamoot_app
-description: " MetaMoot - هرمي ERP + نظام متجر السوق"
+description: " MetaMoot - نظام ERP هرمي + متجر السوق"
 publish_to: 'none'
 version: 1.0.0+1
 environment:
@@ -16,6 +16,10 @@ dependencies:
   local_auth: ^2.3.0
   intl: ^0.20.2
   google_fonts: ^6.2.1
+  flutter_tts: ^4.2.0
+  speech_to_text: ^7.0.0
+  google_generative_ai: ^0.4.6
+  dash_chat_2: ^0.0.21
 
 flutter:
   uses-material-design: true
