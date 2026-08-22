@@ -1,23 +1,11 @@
-name: metamoot_app
-description: "نظام متجر + ERP هرمي - MetaMoot السوق"
-publish_to: 'none'
-version: 1.0.0+1
-environment:
-  sdk: '>=3.0.0 <4.0.0'
-
 dependencies:
   flutter:
     sdk: flutter
-  firebase_core: ^2.10.0
-  firebase_auth: ^4.3.0
-  cloud_firestore: ^4.7.0
-  image_picker: ^0.8.7+4
-  google_mlkit_text_recognition: ^0.7.0
-  local_auth: ^2.1.6
-  intl: ^0.18.1
-  google_fonts: ^6.1.0
-
-flutter:
-  uses-material-design: true
-  assets:
-    - assets/fonts/
+  firebase_core: ^3.8.0
+  firebase_auth: ^5.3.2
+  cloud_firestore: ^5.4.4
+  image_picker: ^1.1.2
+  google_mlkit_text_recognition: ^0.14.0
+  local_auth: ^2.3.0
+  intl: ^0.20.2
+  google_fonts: ^6.2.1
