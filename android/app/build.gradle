@@ -5,6 +5,7 @@ if (localPropertiesFile.exists()) {
 }
 
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
 
 android {
     namespace "com.metamoot.metamoot_pro_al"
