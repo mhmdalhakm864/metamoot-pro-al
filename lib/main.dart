@@ -113,7 +113,7 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       endDrawer: _buildDrawer(context),
-      body: Row(
+      body: Row(endDrawer: _buildDrawer(context),
         children: [
           if (isWide) _buildSideBar(), // شريط جانبي ثابت على الشاشات الكبيرة
           Expanded(
