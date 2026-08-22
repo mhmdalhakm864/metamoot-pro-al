@@ -112,9 +112,24 @@ class _HomePageState extends State<HomePage> {
             }),
         ],
       ),
-      endDrawer: _buildDrawer(context),
-      body: Row(endDrawer: _buildDrawer(context),
-        children: [
+endDrawer: _buildDrawer(context),
+floatingActionButton: FloatingActionButton.extended(
+  backgroundColor: Color(0xFF7B2FFF),
+  icon: const Icon(Icons.smart_toy, color: Colors.white),
+  label: const Text('اسأل ميتاموت AI', style: TextStyle(color: Colors.white)),
+  onPressed: () {
+    Navigator.push(context, MaterialPageRoute(builder: (_) => const AiChatScreen(
+      currentUser: {
+        'name': 'مدير تعز',
+        'role': 'branch_manager',
+        'branchId': 'taiz',
+        'permissions': ['view_attendance', 'view_sales']
+      }
+    )));
+  },
+),
+body: Row(
+  children: [
           if (isWide) _buildSideBar(), // شريط جانبي ثابت على الشاشات الكبيرة
           Expanded(
             child: Padding(
