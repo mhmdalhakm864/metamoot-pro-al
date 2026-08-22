@@ -7,10 +7,11 @@ if (localPropertiesFile.exists()) {
 apply plugin: 'com.android.application'
 
 android {
+    namespace "com.metamoot.metamoot_pro_al"
     compileSdkVersion 33
 
     defaultConfig {
-        applicationId "com.example.metamoot_app"
+        applicationId "com.metamoot.metamoot_pro_al"
         minSdkVersion 21
         targetSdkVersion 33
         versionCode 1
