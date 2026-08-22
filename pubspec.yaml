@@ -1,16 +1,22 @@
-name: metamoot_pro_al
-description: تطبيق ميتاموت برو AL - إدارة متاجر
+name: metamoot_app
+description: "نظام متجر + ERP هرمي - MetaMoot السوق"
 publish_to: 'none'
 version: 1.0.0+1
 environment:
   sdk: '>=3.0.0 <4.0.0'
+
 dependencies:
   flutter:
     sdk: flutter
-  google_fonts: ^6.1.0
-  hive_flutter: ^1.1.0
-  hive: ^2.3
+  firebase_core: ^2.10.0
+  firebase_auth: ^4.3.0
+  cloud_firestore: ^4.7.0
+  image_picker: ^0.8.7+4
+  google_mlkit_text_recognition: ^0.7.0
+  local_auth: ^2.1.6
   intl: ^0.18.1
+  google_fonts: ^6.1.0
+
 flutter:
   uses-material-design: true
   assets:
