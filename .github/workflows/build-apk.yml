@@ -1,5 +1,5 @@
 name: Build APK
-on: [push]
+on: [push, workflow_dispatch]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,8 +12,13 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
-      - run: flutter pub get
-      - run: flutter build apk --debug
+      - name: Fix v1 embedding forever
+        run: |
+          rm -rf android
+          flutter create . --platforms=android --org com.metamoot --project-name metamoot_pro_al
+          flutter pub get
+      - name: Build
+        run: flutter build apk --debug
       - uses: actions/upload-artifact@v4
         with:
           name: metamoot-pro-apk
