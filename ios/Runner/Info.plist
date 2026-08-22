@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>CFBundleName</key>
+  <string>metamoot_app</string>
+
+  <!-- Camera usage -->
+  <key>NSCameraUsageDescription</key>
+  <string>يحتاج التطبيق استخدام الكاميرا لالتقاط الصور أو المسح الضوئي للمنتجات.</string>
+
+  <!-- Face ID / Biometric usage (Face ID) -->
+  <key>NSFaceIDUsageDescription</key>
+  <string>نستخدم البصمة أو Face ID للمصادقة السريعة والآمنة.</string>
+
+  <!-- If you use photo library -->
+  <key>NSPhotoLibraryUsageDescription</key>
+  <string>نحتاج الوصول لمكتبة الصور لاختيار الصور والوسائط.</string>
+</dict>
+</plist>

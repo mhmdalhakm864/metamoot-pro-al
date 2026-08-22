@@ -1,0 +1,33 @@
+# Flutter/Dart/Pub
+.dart_tool/
+.packages
+.pub-cache/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-versions
+.generated/
+.idea/
+.vscode/
+*.iml
+
+# Android
+**/android/local.properties
+**/android/.gradle
+**/android/app/*.keystore
+
+# iOS
+**/ios/Flutter/Flutter.podspec
+**/ios/Podfile.lock
+**/ios/Pods/
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# macOS
+.macos/
+
+# Firebase
+google-services.json
+GoogleService-Info.plist
+
+# Misc
+.DS_Store
