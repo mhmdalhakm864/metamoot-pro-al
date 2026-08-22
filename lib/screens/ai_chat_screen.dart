@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'services/ai_assistant_service.dart';
+import '../services/ai_assistant_service.dart';
 
 class AiChatScreen extends StatefulWidget {
   final Map<String, dynamic> currentUser;
