@@ -12,14 +12,16 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
-      - name: Fix v1 embedding forever
+          cache: true
+      - name: Recreate android folder
         run: |
           rm -rf android
-          flutter create . --platforms=android --org com.metamoot --project-name metamoot_pro_al
+          flutter create . --org com.metamoot --project-name metamoot_pro_al --platforms=android --overwrite
           flutter pub get
       - name: Build APK
-        run: flutter build apk --debug
-      - uses: actions/upload-artifact@v4
+        run: flutter build apk --debug --no-tree-shake-icons
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
         with:
-          name: metamoot-pro-apk
+          name: metamoot-apk
           path: build/app/outputs/flutter-apk/app-debug.apk
